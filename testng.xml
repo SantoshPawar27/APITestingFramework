@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >  <!--parallel="tests"-->
+    <listeners>
+         <listener class-name="com.rest.APITestingFramework.Listeners.ExtentListeners"/>
+
+     </listeners>
+
+    <test verbose="2" preserve-order="true" name="Create Asset API">
+        <classes>
+            <class name="com.rest.APITestingFramework.TestCases.CreateAssetTest">
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Create JOb API">
+        <classes>
+            <class name="com.rest.APITestingFramework.TestCases.CreateJobTest">
+            </class>
+        </classes>
+    </test>
+
+</suite>
