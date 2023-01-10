@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 public class CreateAssetAPI extends BaseTest {
 
     public static Map sendPostRequestToCreateAssetAPI(AssetCreate assetCreate){
-
+        // This comment for testing
         Map response = given()
                 .header("CLIENT_ID", config.getProperty("clientID"))
                 .header("SECRET_ID",config.getProperty("secretID"))
